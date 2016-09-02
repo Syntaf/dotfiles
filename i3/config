@@ -14,6 +14,9 @@ set $mod Mod1
 # set background image
 exec --no-startup-id feh --bg-scale /home/ghome/Pictures/binary_cloud.png
 
+# use xrandr for duel montior
+xrandr --output HDMI-0 --auto --left-of DVI-1
+
 # remove borders and set gapsize, make XFCE apps floating
 for_window [class="^.*"] border pixel 0
 gaps inner 20
